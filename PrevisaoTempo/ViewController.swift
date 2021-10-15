@@ -25,9 +25,12 @@ class ViewController: UIViewController {
         
         self.view.addSubview(previsaoCollection)
         
-//        NSLayoutConstraint.activate([
-//            
-//        ])
+        NSLayoutConstraint.activate([
+            previsaoCollection.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
+            previsaoCollection.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor),
+            previsaoCollection.leftAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor),
+            previsaoCollection.rightAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor)
+        ])
     }
 
 }
