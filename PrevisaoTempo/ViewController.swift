@@ -17,7 +17,13 @@ class ViewController: UIViewController {
         // o layout vai definir alguns aspectos de como a collection vai ser apresentada na tela
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: 100.0, height: 160.0)
+        layout.itemSize = CGSize(width: (self.view.frame.width*0.90-40)/3, height: 160.0)
+        
+        // definindo espaco entre linhas dos itens da collection
+        layout.minimumLineSpacing = 20
+        
+        // definindo espaco entre colunas dos itens da collection
+        //layout.minimumInteritemSpacing = 20
         
         previsaoCollection = UICollectionView(frame: .zero, collectionViewLayout: layout)
         previsaoCollection.delegate = self
