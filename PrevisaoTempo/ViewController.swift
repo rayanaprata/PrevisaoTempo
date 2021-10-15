@@ -34,8 +34,12 @@ class ViewController: UIViewController {
         NSLayoutConstraint.activate([
             previsaoCollection.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor, constant: 20),
             previsaoCollection.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
-            previsaoCollection.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
-            previsaoCollection.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -20)
+            
+            previsaoCollection.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            previsaoCollection.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.90)
+            
+//            previsaoCollection.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 20),
+//            previsaoCollection.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -20)
         ])
     }
 
